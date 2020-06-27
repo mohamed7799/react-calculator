@@ -1,0 +1,18 @@
+@import "../../index.scss";
+.calculator {
+  padding: 1rem;
+  width: 30%;
+  margin: 2rem auto;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  background-color: #1c1c1c;
+  color: white;
+
+  @include mobile(900px) {
+    width: 50%;
+  }
+
+  @include mobile(500px) {
+    width: 80%;
+  }
+}

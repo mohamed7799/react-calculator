@@ -1,0 +1,41 @@
+@import "../../../index.scss";
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+
+  @include mobile(400px) {
+    height: auto;
+  }
+}
+
+.btn {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+  cursor: pointer;
+
+  @include mobile(400px) {
+    height: 30px;
+    width: 30px;
+    padding: 1rem;
+  }
+}
+
+.op-js {
+  background-color: $third-color;
+}
+
+.num-js,
+.sp-js {
+  background-color: $sec-color;
+}
+
+.zero {
+  grid-column: 1/4;
+}
